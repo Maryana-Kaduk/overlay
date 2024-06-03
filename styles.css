@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+/* 1 */
+
+/* .hero {
+    position: relative;
+    z-index: 2;
+    background-image: url('./flower-g53eb1d186_1920.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-block-size: 80vh;
+    place-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 100%;
+}
+
+.hero::before {
+    content: ' ';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+        hsl(240 100% 20% / 0.6), 
+        hsl(0 100% 15% / 0.6)
+    );
+    z-index: -1;
+} */
+
+/* 2 */
+
+.overlay {
+    border-image: 
+        linear-gradient(
+            hsl(240 100% 20% / 0.6), 
+            hsl(0 100% 15% / 0.6)
+        )
+        fill 1;
+}
+
+.hero {
+    background-image: url('./flower-g53eb1d186_1920.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-block-size: 80vh;
+    place-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 100%;
+}
